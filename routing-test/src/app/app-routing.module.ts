@@ -5,7 +5,8 @@ import { FruitsComponent } from './fruits/fruits.component';
 
 const routes: Routes = [
   { path: 'animals', component: AnimalsComponent},
-  { path: 'fruits', component: FruitsComponent}
+  { path: 'fruits', component: FruitsComponent},
+  {path: '', redirectTo: '/animals', pathMatch: 'full'}
 ];
 
 @NgModule({
